@@ -5,7 +5,7 @@ export const TEXTMEDIA_SECTION_FRAGMENT = gql`
 		id
 		heading
 		eyebrow
-		content {
+		textMediaSectionContent: content {
 			blocks
 			inlineBlocks
 			links

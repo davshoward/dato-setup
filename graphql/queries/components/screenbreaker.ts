@@ -5,7 +5,7 @@ export const SCREEN_BREAKER_FRAGMENT = gql`
 		id
 		heading
 		eyebrow
-		content
+		screenbreakerContent: content
 		layout
 		panel
 		image {
@@ -13,7 +13,7 @@ export const SCREEN_BREAKER_FRAGMENT = gql`
 				...responsiveImageFragment
 			}
 		}
-		actions {
+		screenbreakerActions: actions {
 			...ButtonRecordFragment
 		}
 	}
