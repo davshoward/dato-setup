@@ -5,7 +5,7 @@ export const TEXTMEDIA_FEATURED_FRAGMENT = gql`
 		id
 		heading
 		eyebrow
-		content
+		textMediaFeaturedContent: content
 		layout
 		theme
 		image {
@@ -18,7 +18,7 @@ export const TEXTMEDIA_FEATURED_FRAGMENT = gql`
 				...responsiveImageFragment
 			}
 		}
-		actions {
+		textMediaFeaturedActions: actions {
 			...ButtonRecordFragment
 		}
 	}

@@ -4,11 +4,11 @@ export const HERO_FRAGMENT = gql`
 	fragment HeroRecordFragment on HeroRecord {
 		id
 		heading
-		content
+		heroContent: content
 		layout
 		theme
 		useBackgroundVideo
-		image {
+		heroImage: image {
 			responsiveImage {
 				...responsiveImageFragment
 			}

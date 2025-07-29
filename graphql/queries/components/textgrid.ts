@@ -5,7 +5,7 @@ export const TEXT_GRID_FRAGMENT = gql`
 		id
 		heading
 		eyebrow
-		content
+		textGridContent: content
 		theme
 		pattern
 		layout

@@ -5,7 +5,7 @@ export const VIDEO_FRAGMENT = gql`
 		id
 		heading
 		eyebrow
-		content
+		videoContent: content
 		pattern
 		theme
 		videoEmbed {
@@ -14,7 +14,7 @@ export const VIDEO_FRAGMENT = gql`
 			thumbnailUrl
 			title
 		}
-		actions {
+		videoActions: actions {
 			...ButtonRecordFragment
 		}
 	}
